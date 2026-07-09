@@ -1,79 +1,132 @@
- .body{
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-    background-color:#f0f0f0;
-    font-family:Arial, Helvetica, sans-serif;
+ html {
+     font-size: 10px;
  }
- .container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-top: 100px;
-    gap: 30px;
+
+ .body {
+     background-color: #f0f0f0;
+     font-family: 'Lato', systemui, sans-serif;
+     font-weight: 300;
+ }
+
+ .container {
+     padding: 0 2rem;
+     max-width: 110rem;
+     margin: 10rem auto;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 2rem;
 
  }
- .box1{
-    
-    background-color: #ffffff;
-    width: 220px;
-    height: 320px;
-    border-radius: 4px;
-    border: 2px solid #000000;
-    
+
+ .cards_container .card {
+     min-width: 300px;
  }
- .icon{
-margin: 20px 0 15px 80px;
+
+ .box {
+     background-color: #ffffff;
+     max-width: 325px;
+     text-align: center;
+     border-radius: 3px;
+     transition: .25s border-color, .25s background-color;
+     border: 2px solid #000000;
+     padding: 4rem 2rem;
 
  }
- .heading{
-    
-    text-align:center;
-    font-size: 24px;
-    
- }
- .para{
-    text-align:center;
-    font-size: 16px;
-    margin-bottom: 25px;
-    
- }
- .btn{
-    display: block;
-    margin: 0 auto;
-    padding: 10px 55px;
-    background-color: #000000;
-    color: #cac3c3;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
- }
- .box2{
-    
-    background-color: #f03f6b;
-    width: 220px;
-    height: 330px;
-    border-radius: 4px;
 
-    
+ .card_logo {
+     font-size: 6.7rem;
+     margin-bottom: 2.5rem;
+
  }
- 
- .instaHeading{
-    
-    text-align:center;
-    font-size: 24px;
-    text-color: #fff;
+
+ .heading {
+
+     font-size: 3rem;
+     font-weight: 900;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     margin-bottom: 1.5rem;
+
  }
- .instaPara{
-    text-align:center;
-    font-size: 16px;
-    text-color: #fff;
+
+ .para {
+     font-size: 1.8rem;
+     font-weight: 400;
+     line-height: 1.5;
+     margin-bottom: 2rem;
+
  }
- .instaBtn{
-    display: block;
-    margin: 0 auto;
-    padding: 10px 55px;
-    background-color: #ffffff;
-    color: #f03f6b;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
+
+ .btn {
+     font-family: inherit;
+     font-size: 1.6rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     padding: 10px 0;
+     background-color: #000000;
+     color: #cac3c3;
+     border: none;
+     border-radius: 200px;
+     width: 100%;
+     cursor: pointer;
+     transition: .25s all;
+ }
+
+ .box .card_logo,
+ .box .heading,
+ .box .para {
+     color: #222;
+     transition: .25s all;
+ }
+
+ /* card hover effect */
+ .box:hover {
+     background-color: #f00f5f;
+     border-color: transparent;
+ }
+
+ .box.active {
+     background-color: #f00f5f;
+     border-color: transparent;
+ }
+
+ .box:hover .card_logo,
+ .box:hover .heading,
+ .box:hover .para {
+     color: #fff;
+ }
+
+ .box.active .btn:hover {
+     background-color: black;
+     color: white;
+ }
+
+ .btn:hover {
+     background-color: white;
+     color: black;
+ }
+
+ .box.active .card_logo,
+ .box.active .heading,
+ .box.active .para {
+     color: white;
+ }
+
+
+ .box.active .btn {
+     background-color: white;
+     color: black;
+
+ }
+
+ .box *::selection {
+     color: rgb(68, 126, 92);
+     background-color: black;
  }
