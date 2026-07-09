@@ -1,0 +1,79 @@
+ .body{
+
+    background-color:#f0f0f0;
+    font-family:Arial, Helvetica, sans-serif;
+ }
+ .container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 100px;
+    gap: 30px;
+
+ }
+ .box1{
+    
+    background-color: #ffffff;
+    width: 220px;
+    height: 320px;
+    border-radius: 4px;
+    border: 2px solid #000000;
+    
+ }
+ .icon{
+margin: 20px 0 15px 80px;
+
+ }
+ .heading{
+    
+    text-align:center;
+    font-size: 24px;
+    
+ }
+ .para{
+    text-align:center;
+    font-size: 16px;
+    margin-bottom: 25px;
+    
+ }
+ .btn{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 55px;
+    background-color: #000000;
+    color: #cac3c3;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+ }
+ .box2{
+    
+    background-color: #f03f6b;
+    width: 220px;
+    height: 330px;
+    border-radius: 4px;
+
+    
+ }
+ 
+ .instaHeading{
+    
+    text-align:center;
+    font-size: 24px;
+    text-color: #fff;
+ }
+ .instaPara{
+    text-align:center;
+    font-size: 16px;
+    text-color: #fff;
+ }
+ .instaBtn{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 55px;
+    background-color: #ffffff;
+    color: #f03f6b;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+ }
